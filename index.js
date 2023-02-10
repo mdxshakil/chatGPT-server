@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 require('dotenv').config();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 const configuration = new Configuration({
     organization: process.env.OPEN_API_ORGANIZATION,
